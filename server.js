@@ -30,9 +30,9 @@ connectToDB();
 //   res.status(201).send('server runing');
 // });
 
+app.use('/static', express.static('public')); // to serve front-end
 app.use('/', controllers);
 
 const server = app.listen(PORT, () => {
-  console.log(server.address());
   console.log(`server running on PORT ${PORT}}`);
 });
