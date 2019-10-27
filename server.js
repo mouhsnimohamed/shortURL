@@ -4,6 +4,7 @@ const connectToDB = require('./mongoose');
 const controllers = require('./controllers/shortUrlController');
 const PORT = process.env.PORT || '5000';
 const app = express();
+const bodyParser = require('body-parser');
 /* 
     #@# DB CONNECTION #@# 
 */
@@ -25,11 +26,12 @@ connectToDB();
 //     next();
 //   }
 // });
-// app.use(bodyParser.json());
+
 // app.get('/', (req, res) => {
 //   res.status(201).send('server runing');
 // });
 
+app.use(bodyParser.json());
 app.use('/static', express.static('public')); // to serve front-end
 app.use('/', controllers);
 

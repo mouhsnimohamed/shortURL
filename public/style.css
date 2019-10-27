@@ -48,12 +48,12 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   max-width: 650px;
 }
 
 .form-section {
-  height: 400px;
+  height: 300px;
 }
 
 .page-title {
