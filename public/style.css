@@ -1,0 +1,117 @@
+/* ==========================================================================
+   #URL SHORTENER STYLES
+   ========================================================================== */
+
+/**
+ *
+ * Inheriting box sizing slightly better best-practice
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ *
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Properties
+     ========================================================================== */
+
+:root {
+  --blue: #46acca;
+  --brown: rgb(240, 95, 83);
+  --purple: rgb(164, 95, 167);
+}
+
+/* Body
+     ========================================================================== */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.4;
+}
+
+/* Top Section
+     ========================================================================== */
+
+.form-section,
+.result-section {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 650px;
+}
+
+.form-section {
+  height: 300px;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: rgb(43, 29, 72);
+}
+
+.url-form {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.url-input {
+  width: 100%;
+  border: 1px solid var(--purple);
+  padding: 10px 15px;
+  font-size: 20px;
+  height: 45px;
+  margin-bottom: 0;
+}
+
+.submit-button {
+  display: block;
+  letter-spacing: 1px;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid var(--purple);
+  background-color: var(--purple);
+  color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.result {
+  margin-top: 50px;
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: var(--purple);
+  border: 5px solid var(--purple);
+  border-radius: 5px;
+  text-align: center;
+}
+.short-url {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.short-url:hover {
+  border-bottom: 2px solid white;
+}
