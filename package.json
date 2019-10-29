@@ -1,11 +1,11 @@
 {
   "name": "shorturl",
   "version": "1.0.0",
-  "description": "https://afternoon-lowlands-46105.herokuapp.com/ short URL generator",
-  "url": "https://afternoon-lowlands-46105.herokuapp.com/",
+  "description": "short URL generator",
   "main": "index.js",
   "scripts": {
-    "start": "node server",
+    "start": "node server.js",
+    "deploy": "git push heroku master",
     "dev": "nodemon server"
   },
   "repository": {
